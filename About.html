@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="homepagestyles.css">
+    <style>
+    body {
+        padding-top: 70px;
+        font-family: Arial, sans-serif;
+        background-color: #000000; /* Light background for whole page */
+        color: #ffffff; /* Dark text by default */
+    }
+
+    /* Hero Section */
+    .hero {
+        background: #000000; /* white background */
+        padding: 80px 20px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #ffffff; /* black text */
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+        color: #ffffff; /* dark grey */
+    }
+
+    /* Section Headings */
+    h2.section-title {
+        text-align: center;
+        margin-bottom: 40px;
+        font-weight: 700;
+        color: #fffbfb; /* dark heading */
+    }
+
+    /* Sections */
+    section.container {
+        padding: 60px 0;
+        background-color: #000000;
+    }
+
+    section.bg-light {
+        background-color: #000000;
+    }
+
+    /* Team cards */
+    .team-member {
+        text-align: center;
+        border: 1px solid #000000;
+        border-radius: 10px;
+        padding: 20px;
+        transition: transform 0.3s;
+        background-color: #000000; /* white card background */
+        color: #ffffff; /* dark text */
+    }
+
+    .team-member:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .team-member img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-bottom: 15px;
+        object-fit: cover;
+    }
+</style>
+</head>
+<body>
+ <header class="navbar">
+    <div class="logo">
+      <img src="images/logo.png" alt="Logo">
+    </div>
+    <nav class="nav-links">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li class="dropdown">
+          <a href="products.html" class="dropbtn">PRODUCTS ▾</a>
+          <ul class="dropdown-content">
+            <li><a href="products.html">Laptops</a></li>
+            <li><a href="smartphones.html">Smartphones</a></li>
+            <li><a href="computers.html">Computers</a></li>
+            <li><a href="peripherals.html">Peripherals</a></li>
+          </ul>
+        </li>
+        <li><a href="cart.html">CART</a></li>
+        <li><a href="about.html">ABOUT US</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="container">
+        <h1>About Our Store</h1>
+        <p>We provide the best technology products to help you stay connected and productive. Quality, affordability, and customer satisfaction are our top priorities.</p>
+    </div>
+</section>
+
+<!-- Our Story Section -->
+<section class="container py-5">
+    <h2 class="section-title">Our Story</h2>
+    <p class="text-center mx-auto" style="max-width:800px;">Founded in 2020, our e-commerce store has grown to become a trusted source for laptops, smartphones, computers, and peripherals. We aim to bring top-notch tech to every household at competitive prices, while providing excellent customer service.</p>
+</section>
+
+<!-- Our Mission Section -->
+<section class="container py-5 bg-black">
+    <h2 class="section-title">Our Mission</h2>
+    <p class="text-center mx-auto" style="max-width:800px;">Our mission is simple: Make technology accessible and enjoyable for everyone. We carefully select products that offer the best performance, reliability, and value for money.</p>
+</section>
+
+<!-- Team Section -->
+<section class="container py-5">
+    <h2 class="section-title">Meet Our Team</h2>
+    <div class="row g-4">
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="images/profiles/leo.jpg" alt="CEO">
+                <h5>Richeleo Villamero</h5>
+                <p>CEO & Founder</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="images/profiles/jonilo.jpg" alt="CTO">
+                <h5>Jonilo Tumbiga</h5>
+                <p>Chief Technology Officer</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="images/profiles/sandra.jpg" alt="Marketing">
+                <h5>Crisandra Blanes</h5>
+                <p>Marketing Manager</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="images/profiles/mekyle.jpg" alt="Support">
+                <h5>Mekyle Entica</h5>
+                <p>Customer Support</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="images/profiles/joshua.jpg" alt="Support">
+                <h5>Joshua Arcilla</h5>
+                <p>Customer Support</p>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="team-member">
+                <img src="images/profiles/lyle.jpg" alt="Support">
+                <h5>Lyle Auxtero</h5>
+                <p>Customer Support</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

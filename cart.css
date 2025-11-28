@@ -1,0 +1,137 @@
+/* ============================
+   NAVIGATION BAR STYLE
+============================ */
+.navbar {
+    background-color: #000000 !important; 
+    padding: 20px 80px;
+}
+
+.navbar a {
+    color: #ffffff !important; 
+    font-weight: 600;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #c70039!important; 
+}
+
+/* Container */
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 25px;
+}
+
+/* Row Layout */
+.row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* ============================
+   CART CONTROLS (QTY BUTTONS)
+============================= */
+.qty-btn {
+    background: #4682B4; /* Steel Blue */
+    color: #fff;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.qty-btn:hover {
+    background: #1E90FF; /* Dodger Blue */
+}
+
+.qty-input {
+    text-align: center;
+    width: 40px;
+    border: none;
+    background: transparent;
+    font-weight: 600;
+    color: #004a8f; /* Dark Blue Text */
+}
+
+/* ============================
+   REMOVE ITEM BUTTON
+============================= */
+.remove-btn {
+    background: none;
+    border: none;
+    color: #004a8f; 
+    cursor: pointer;
+    font-size: 1.2em;
+    padding: 5px;
+}
+
+.remove-btn:hover {
+    background: none;
+    color: #1E90FF; 
+}
+
+/* ============================
+   CART ACTION BUTTON WRAPPER
+============================= */
+.cart-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    gap: 20px;
+    background: #4682B4; 
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* ============================
+   BOOTSTRAP THEME OVERRIDES
+============================= */
+
+/* Table Header Blue Theme */
+.table-primary {
+    background-color: #cfe8ff !important; 
+    color: #003f7f !important; 
+}
+
+/* Text Accent (Total Price) */
+.text-primary {
+    color: #0074FF !important; 
+}
+
+/* Checkout Button */
+.btn-primary {
+    background-color: #0074FF !important;
+    border: none;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: #005fcc !important;
+}
+
+/* Back to Shop Outline Button */
+.btn-outline-primary {
+    border-color: #0074FF !important;
+    color: #0074FF !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: #0074FF !important;
+    color: white !important;
+}
+
+/* ============================
+   PAGE HEADING STYLE ("Your Shopping Cart")
+============================= */
+.cart-title {
+    color: #005fcc !important; /* deep cool blue */
+    font-weight: 700;
+}

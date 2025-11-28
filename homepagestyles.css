@@ -1,0 +1,267 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family:'Times New Roman', Times, serif;
+  background: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+
+.logo img {
+  height: 55px;
+  width: auto;
+  background-color: rgba(0, 0, 0, 0.852);
+}
+
+
+.logo p {
+  font-weight: bold;
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+/** NAV LINK**/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000;
+  padding: 20px 80px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+
+.nav-links ul {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+.nav-links a:hover {
+  color: red;
+}
+/* //////////////////////////////////////// */
+
+.hero-slider {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  margin-top: 80px; 
+  overflow: hidden;
+}
+
+
+/* Each Slide */
+.slides {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+}
+
+
+.slides.active {
+  left: 0;
+  opacity: 1;
+}
+
+/* Slide Text Content */
+.content {
+  position: absolute;
+  bottom: 20%;
+  left: 10%;
+  max-width: 500px;
+  text-align: left;
+}
+
+.content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 5px;
+}
+
+.content p {
+  margin-top: -10px;
+  font-size: 1.2rem;
+  padding: 10px;
+}
+
+.btn {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  border-radius: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+
+/* Slider Arrows */
+.slider-controls {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: rgb(253, 253, 253);
+  padding: 0 30px;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 15px 30px;
+  }
+
+  .nav-links ul {
+    gap: 20px;
+  }
+
+  .content h1 {
+    font-size: 2rem;
+  }
+
+  .content p {
+    font-size: 1rem;
+  }
+}
+
+/* ======= FOOTER DESIGN ======= */
+.footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 40px 20px 10px;
+  border-top: 2px solid #000000;
+}
+
+
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.logo-footer {
+  height: 100px; /* adjust as needed */
+  background-color: black;
+  border-radius: 8px;
+  margin-top: 10px;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+  transform: scale(1.1);
+}
+
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 10px;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+/* Dropdown container */
+.nav-links ul li.dropdown {
+    position: relative;
+}
+
+/* Hide dropdown menu by default */
+.dropdown-content {
+    visibility: hidden; 
+    opacity: 0; 
+    transition: opacity 0.3s, visibility 0.3s;
+
+    position: absolute;
+    background-color: #111;
+    min-width: 160px; 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    top: 100%;
+    left: 0;
+    border-radius: 4px;
+    z-index: 999;
+
+    display: block; /* Make sure container is block */
+}
+
+/* Make dropdown items vertical */
+.dropdown-content li {
+    display: block; /* ensures vertical stacking */
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Make links fill the width */
+.dropdown-content li a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Hover effect for links */
+.dropdown-content li a:hover {
+    background-color: #333;
+}
+
+/* Show dropdown on hover */
+.nav-links ul li.dropdown:hover .dropdown-content {
+    visibility: visible;
+    opacity: 1;
+}
